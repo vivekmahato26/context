@@ -1,0 +1,26 @@
+@import "./constants.scss";
+
+// $color : green;
+
+
+.para {
+    font-size: 1rem;
+    color: $color;
+}
+
+@mixin fonts {
+    color: #000bac;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.container {
+    .nested {
+       @include fonts;
+        font-family: $robotoFont;
+    }
+    .nested1 {
+        @include fonts;
+        font-family: $quickDreanFont;
+    }
+}
